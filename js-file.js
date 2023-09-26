@@ -19,3 +19,33 @@ const header3 = document.createElement('h3');
 header3.style.color = 'blue';
 header3.textContent = 'I\'m blue h3!';
 container.appendChild(header3);
+
+const newDiv = document.createElement('div')
+newDiv.style.border = '3px solid black'
+newDiv.style.backgroundColor = 'pink'
+container.appendChild(newDiv)
+
+const header1 = document.createElement('h1')
+header1.textContent = 'I\'m in a div'
+
+const para2 = document.createElement('p')
+para2.textContent = 'ME TOO!'
+
+newDiv.appendChild(header1)
+newDiv.appendChild(para2)
+
+container.appendChild(newDiv)
+
+const btn = document.querySelector('#btn')
+btn.onclick = () => alert("Hello World")
+
+function alertFunction() {
+    alert("YAY! YOU DID IT!");
+}
+
+const btn2 = document.querySelector('#btn2')
+btn2.addEventListener('click', alertFunction);
+
+btn2.addEventListener('click', function (e) {
+    console.log(e)
+});
